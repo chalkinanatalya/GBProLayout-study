@@ -29,14 +29,33 @@ body {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: content;
+    margin-top: 18px;
+    margin-bottom: 19px;
+}
+
+.right-nav {
+    margin-top: 18px;
+    margin-bottom: 19px;
 }
 
 .icon-left-1 {
     padding-right: 44px;
 }
 
+.icon-left-2:hover svg {
+    stroke: #d66b9d; 
+}
+
 .icon-right {
     padding-right: 33px;
+}
+
+.icon-right:hover svg {
+    stroke: #d66b9d; 
+}
+
+.icon-right-3:hover svg {
+    stroke: #d66b9d; 
 }
 
 .jumbotrone {
@@ -170,6 +189,56 @@ body {
     padding-bottom: 10px;
 }
 
+.item-img {
+    position: relative;
+    flex: 1;
+}
+
+.item-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.item-btn {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;  
+    width: 139px;
+    height: 44px;
+}
+
+.item-bg:hover > .item-btn {
+    visibility: visible;
+}
+
+.item-bg:hover {
+    background: rgba(58, 56, 56, 0.86);
+}
+
+ .item-btn-txt {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+ }
+
+.item-btn-txt::before {
+    content: url(../img/cart.svg);
+    vertical-align: middle;
+    padding-right: 11px;
+}
+
 .item-title {
     font-style: normal;
     font-size: 13px;
@@ -205,6 +274,11 @@ body {
     margin-top: 48px;
 }
 
+.button-items-text:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+}
+
 .button-items-text {
     font-size: 16px;
     line-height: 19px;
@@ -227,6 +301,7 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0;
 }
 
 .service {
@@ -260,6 +335,10 @@ body {
 
 .registration {
     background: url("../img/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
 }
 
 .registration-list {
@@ -269,7 +348,74 @@ body {
     margin: 0;
 }
 
+.review {
+    margin-top: 87px;
+}
 
+.review-woman {
+    margin: auto;
+    display: block;
+}
+
+.review-text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+
+}
+
+.review-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.review-normal {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.review-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 156px;
+}
+
+.registration-input {
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 18px 64px 17px 22px;
+}
+
+.registration-button {
+    background-color: #F16D7F;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBFBFB;
+    padding: 20px 18px 20px 17px;
+}
+
+.registration-button:hover {
+    background-color: #E05C6E;
+    
+}
 
 .contacts {
     background: #222224;
@@ -279,16 +425,18 @@ body {
 .contacts-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
     
 }
 
 .contacts-social {
-    margin-top: 24px;
+    padding-top: 24px;
 }
 
 .copyright {
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
