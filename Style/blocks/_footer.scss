@@ -1,0 +1,201 @@
+/* Section of servises below (delivery etc)*/
+.services {
+    background: #222224;
+
+    &-list {
+        @include flex-distribution;
+        list-style: none;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+/* For every item of the service*/
+
+.service {
+    padding-top: 103px;
+    padding-bottom: 104px;
+    flex: 1;
+    min-width: 340px;
+
+    &-heading {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+        text-align: center;
+    }
+
+    &-text {
+        font-weight: 300;
+        @include main-text;
+        text-align: center;
+        color: #FBFBFB;
+    }
+}
+
+/* For registration form + quotation with review*/
+
+/*Common BG footer classes*/
+
+.registration {
+    background: url("../img/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
+    &-list {
+        @include flex-distribution;
+        list-style: none;
+        margin: 0;
+    }
+    
+}
+
+/*Quotation with review*/
+
+.review {
+
+    margin-top: 87px;
+
+    &-woman {
+        margin: auto;
+        display: block;
+    }
+
+    &-text {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    
+    }
+
+    /*Information about subscribing starts here*/
+
+    &-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-bold {
+        font-style: normal;
+        font-weight: bold;
+        @include header-text;
+        text-align: center;
+        color: #222224;
+    }
+
+    &-normal {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 167.2%;
+        text-align: center;
+        color: #222224;
+    }
+}
+
+/*Information that's connected with form starts here*/
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 156px;
+
+    &-input {
+        background-color: #E1E1E1;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        padding: 18px 64px 17px 22px;
+    }
+
+    &-button {
+        background-color: $main-color;
+        border: none;
+        border-radius: 0 20px 20px 0;
+        @include main-text;
+        color: #FBFBFB;
+        padding: 20px 18px 20px 17px;
+
+        &:hover {
+            background-color: $main-color-hover;
+            
+        }
+    }
+}
+
+/*All information about contacts*/
+
+/*Common classes for contacts*/
+
+.contacts {
+    background: #222224;
+
+    &-info {
+        @include flex-distribution;
+    }
+
+    &-social {
+        padding-top: 24px;
+    }
+
+}
+
+
+.copyright {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Social-media icons*/
+
+.fa-facebook-f {
+    padding: 9px 12px;
+    color: black;
+    background-color: #FFFFFF;
+
+    &:hover {
+        background-color: $main-color;
+    }
+}
+
+.fa-instagram {
+    padding: 9px;
+    color: black;
+    background-color: #FFFFFF;
+
+    &:hover {
+        background-color: $main-color;
+    }
+}
+
+
+.fa-pinterest-p {
+    padding: 9px;
+    color: black;
+    background-color: #FFFFFF;
+
+    &:hover {
+        background-color: $main-color;
+    }
+}
+
+
+.fa-twitter {
+    padding: 9px 8px;
+    color: black;
+    background-color: #FFFFFF;
+
+    &:hover {
+        background-color: $main-color;
+    }
+}
+

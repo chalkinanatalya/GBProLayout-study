@@ -1,0 +1,46 @@
+/* For pagination*/
+
+.pagination {
+    text-align: center;
+    margin-top: 48px;
+
+    &-pages {
+        display:inline-flex;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+    }
+
+    &-number {
+        display: flex;
+        text-decoration: none;
+        color: #C4C4C4;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 12px;  
+    
+        &:hover { 
+            color: $main-color;
+        }
+    }
+}
+
+.fa-angle-left {
+    color: #000000;
+    height: 14px;
+    margin-top: 3px;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.fa-angle-right {
+    color: #000000;
+    height: 14px;
+    margin-top: 3px;
+
+    &:hover {
+        color: $main-color;
+    }
+}

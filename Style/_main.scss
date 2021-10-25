@@ -1,0 +1,13 @@
+/* Common characteristics for whole site settings*/
+
+body {
+    @include main-body;
+}
+
+.container {
+    @include container;
+}
+
+.center {
+    @include centerer;
+}

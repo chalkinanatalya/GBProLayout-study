@@ -1,0 +1,85 @@
+.jumbotron-main {
+    background-color: #F1E4E6;
+}
+
+.jumbotron {
+    background-color: #F8F3F4;
+}
+
+.model {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 760px;
+    background-image: url("../img/model.png");
+    background-repeat: no-repeat;
+    background-position: -225px 0;
+}
+
+.brand-name {
+    border-left: 12px solid $main-color;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+    margin-right: 95px;
+    margin-top: -30px;
+    padding-left: 16px;
+}
+
+.brand-arrivals {
+    @include flex-distribution;
+}
+
+.brand-header-arrivals {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: normal;
+    @include header-text;
+    color: $main-color;
+}
+
+/* For Breadcrumbs*/
+
+.brand-breadcrumbs {
+    margin-top: 55px;
+    margin-bottom: 66px;
+
+    &-ul {
+        list-style: none;
+    }
+    
+    &-li {
+        display: inline;
+    
+        &+li::before {
+            padding: 8px;
+            color: #636363;
+            content: "/\00a0";
+        }
+    }
+
+    &-a {
+        color: #636363;
+        text-decoration: none;
+    
+        &:hover {
+            color: #E05C6E;
+        }
+    }
+
+    &-a-last {
+        color: $main-color;
+        text-decoration: none
+    }
+}
+
+.brand-bold {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.brand-color {
+    color: $main-color;
+}

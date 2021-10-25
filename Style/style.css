@@ -374,16 +374,16 @@ body {
 }
 
 
-.button-items {
+.items-button {
     margin-top: 48px;
 }
 
-.button-items-text:hover {
+.items-button-text:hover {
     background-color: #F16D7F;
     color: #FFFFFF;
 }
 
-.button-items-text {
+.items-button-text {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
@@ -415,9 +415,6 @@ body {
     min-width: 340px;
 }
 
-.service-low {
-    padding-top: 99px;
-}
 
 
 .service-heading {

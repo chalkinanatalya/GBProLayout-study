@@ -1,0 +1,39 @@
+.navbar {
+    background: #222222;
+}
+
+.wrapper-nav {
+    @include flex-distribution;
+}
+
+.left-nav {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: content;
+    margin-top: 18px;
+    margin-bottom: 19px;
+}
+
+.right-nav {
+    margin-top: 18px;
+    margin-bottom: 19px;
+}
+
+.icon-left-1 {
+    padding-right: 44px;
+}
+
+.icon-left-2:hover svg {
+    stroke: $main-color; 
+}
+
+.icon-right {
+    padding-right: 33px;
+        &:hover svg {
+            stroke: $main-color; 
+    }
+}
+
+.icon-right-3:hover svg {
+    stroke: $main-color; 
+}

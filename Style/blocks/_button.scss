@@ -1,0 +1,19 @@
+/* For button under Items that leads to all Catalog Items*/
+
+.items-button {
+    margin-top: 48px;
+
+    &-text {
+        font-size: 16px;
+        line-height: 19px;
+        border: 1px solid $main-color;
+        color: $main-color;
+        text-decoration: none;
+        padding: 14px 39px;
+    
+        &:hover {
+            background-color: $main-color;
+            color: #FFFFFF;
+        }
+    }
+}

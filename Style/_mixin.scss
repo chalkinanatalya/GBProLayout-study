@@ -1,0 +1,52 @@
+@mixin main-text () {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+@mixin header-text () {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@mixin container () {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@mixin main-body () {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@mixin centerer () {
+    text-align: center;
+    height: 40px;
+}
+
+@mixin flex-distribution () {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin second-layer () {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin list-none () {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}
+
+@mixin button () {
+    outline: none;
+    background: transparent;
+    
+}

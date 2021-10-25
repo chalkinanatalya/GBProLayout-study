@@ -1,0 +1,41 @@
+/* For Slider*/
+
+.slider {
+	background-color:#F7F7F7;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 1;
+
+    &-btn {
+		background-color: rgba(42, 42, 42, 0.15);
+		padding: 10px;
+		border: none;
+        color: #000;
+
+		
+			&:hover {
+		        color: $main-color;
+				border-color: $main-color;
+			}
+			&:active {
+				background-color: $main-color-hover;
+                color: #000;
+			}
+			
+			&-left {
+				left: 5px;
+			}
+			
+			&-right {
+				right: 5px;
+			}
+	}
+
+	&-img {
+		z-index: 1;
+	}
+}
