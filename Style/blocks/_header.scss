@@ -23,17 +23,30 @@
     padding-right: 44px;
 }
 
-.icon-left-2:hover svg {
-    stroke: $main-color; 
+.icon-left-2 {
+    transition: 0.4s;
+        &:hover svg {
+            stroke: $main-color; 
+            cursor: pointer;
+        }
 }
+
+
 
 .icon-right {
     padding-right: 33px;
+    transition: 0.4s;
+
         &:hover svg {
             stroke: $main-color; 
     }
 }
 
-.icon-right-3:hover svg {
-    stroke: $main-color; 
-}
+.icon-right-3 {
+    transition: 0.4s;
+
+        &:hover svg {
+            stroke: $main-color; 
+            cursor: pointer;
+        }
+    }

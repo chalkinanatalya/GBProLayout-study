@@ -10,10 +10,33 @@
         color: $main-color;
         text-decoration: none;
         padding: 14px 39px;
+        transition: 0.4s;
+        display: inline-block;
     
         &:hover {
             background-color: $main-color;
             color: #FFFFFF;
+            cursor: pointer;
+            animation: change-color 1s infinite;
+        }
+
+        @keyframes change-color {
+            0% {
+                background-color: $main-color;
+                color: #FFFFFF;
+            }
+
+            50% {
+                background-color: rgb(192, 87, 105);
+                color: rgb(233, 175, 184);
+            }
+
+            100% {
+                background-color: #FFFFFF;
+                color: $main-color;
+            }
+
+
         }
     }
 }
