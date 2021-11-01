@@ -121,7 +121,7 @@
     }
 
     &-button {
-        background-color: $main-color;
+        background-color: #F16D7F;
         border: none;
         border-radius: 0 20px 20px 0;
         @include main-text;
@@ -177,6 +177,7 @@
         background-color: $main-color;
         cursor: pointer;
         transform: scale(1.1);
+        color: #FFFFFF;
     }
 }
 
@@ -191,6 +192,7 @@
         background-color: $main-color;
         cursor: pointer;
         transform: scale(1.1);
+        color: #FFFFFF;
     }
 }
 
@@ -206,6 +208,7 @@
         background-color: $main-color;
         cursor: pointer;
         transform: scale(1.1);
+        color: #FFFFFF;
     }
 }
 
@@ -221,6 +224,35 @@
         background-color: $main-color;
         cursor: pointer;
         transform: scale(1.1);
+        color: #FFFFFF;
     }
 }
 
+@media (max-width: $tablet-bpoint) {
+
+    .service {
+        padding: 0;
+        gap: 48px;
+    }
+    
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .service-text {
+        width: 360px;
+    }
+
+    .service-text-last {
+        margin-bottom: 64px;
+    }
+
+    .registration-list {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

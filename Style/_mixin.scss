@@ -50,3 +50,19 @@
     background: transparent;
     
 }
+
+
+    /*Area of Media Query*/
+
+@media (max-width: $tablet-bpoint) {
+    .container {
+        width: 735px;
+        padding: $site-padding;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: $mobile-width;
+    }
+}

@@ -82,8 +82,35 @@
 .brand-bold {
     font-weight: 900;
     font-size: 48px;
+    line-height: 58px;
 }
 
 .brand-color {
     color: $main-color;
+}
+
+
+    /*Area of Media Query*/
+
+@media (max-width: $tablet-bpoint) {
+
+    .model {
+        height: 370px;
+        background-size: contain;
+        background-position: -115px 0;
+    }
+
+    .brand-name {
+        margin-right: 0;
+    }
+
+    .brand-bold {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .brand-color {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
