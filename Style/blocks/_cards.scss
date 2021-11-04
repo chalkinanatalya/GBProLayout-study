@@ -99,3 +99,23 @@
     }
 
 }
+
+/*Area of Media Query*/
+
+@media (max-width: $tablet-bpoint) {
+
+        .card {
+            width: 100%;
+        }
+
+        .card-btn {
+            margin-bottom: 64px;
+        }
+}
+
+@media (max-width: $mobile-bpoint) {
+    
+    .card-btn {
+        margin-bottom: 64px;
+    }
+}

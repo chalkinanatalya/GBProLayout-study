@@ -196,6 +196,7 @@ product - color, size etc
             display: block;
             cursor: pointer;
             padding: 13px 16px;
+            box-sizing: border-box;
         }
 
         &-svg {
@@ -247,4 +248,61 @@ product - color, size etc
             font-family: inherit;
         }
 
+}
+
+/*Area of Media Query*/
+
+@media (max-width: $tablet-bpoint){
+
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+    }    
+
+    .dropdown-filter-title {
+        padding: 0;
+    }
+
+    .dropdown-sort-title {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: $mobile-bpoint) {
+
+    .dropdown {
+        display: flex;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .dropdown-filter {
+        width: 0;
+    }
+
+    .dropdown-filter-name {
+        display: none;
+    }
+
+    .dropdown-filter-svg {
+        transform: scale(2);
+        padding: 0;
+    }
+
+    .dropdown-sort-title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .dropdown-qualities {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .dropdown-qualities-title {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 0;
+    }
 }

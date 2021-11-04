@@ -32,7 +32,7 @@
         top: 79px;  
         color: #000000;
         transform-origin: top right;
-        transition: 0.3;
+        transition: 0.3s;
         z-index: 2;
 
         &-open {
@@ -152,11 +152,38 @@
 
     /*Area of Media Query*/
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-bpoint) {
 
         .right-nav-dropdown {
             width: 100vw;
-            height: 100vw;
+            height: 687px;
             padding: 30px;
+        }
+    }
+
+    @media (max-width: $mobile-bpoint) {
+
+        .right-nav {
+            padding-top: 10px;
+        }
+
+        .icon-right {
+            padding: 0;
+        }
+
+        .icon-right-2-svg {
+            display: none;
+        }
+
+        .icon-right-2 {
+            display: none;
+        }
+
+        .icon-right-3-svg {
+            display: none;
+        }
+
+        .icon-right-3 {
+            display: none;
         }
     }

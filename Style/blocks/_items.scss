@@ -1,6 +1,7 @@
 
 .items {
-    padding: 30px 0 95px 0;
+    padding: 0;
+    padding-top: 30px;
 
     &-heading {
         font-weight: normal;
@@ -122,8 +123,35 @@
     /*Area of Media Query*/
 
     @media (max-width: $tablet-bpoint) {
+        .items {
+            padding-bottom: 65px;
+        }
         .items-list {
             gap: 15px;
             justify-content: center;
         }
+
     }
+
+    @media (max-width: $mobile-bpoint) {
+
+        .items {
+            padding: 0;
+        }
+
+        .items-about {
+            margin-bottom: 65px;
+        }
+    
+        .items-list {
+            margin: 0;
+            padding: 0;
+        }
+
+        .invisible-tablet {
+            display: block;
+        }
+    }
+
+    
+    

@@ -1,13 +1,21 @@
 /* For pagination*/
 
 .pagination {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 48px;
+    
 
     &-pages {
-        display:inline-flex;
+        display:flex;
+        justify-content: space-between;
         border: 1px solid #C4C4C4;
         border-radius: 5px;
+        width: 282px;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        margin: 0;
     }
 
     &-number {
@@ -17,7 +25,8 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        padding: 12px;  
+        padding-top: 12px;
+        padding-bottom: 12px;  
         transition: 0.4s;
     
         &:hover { 
@@ -51,5 +60,14 @@
         color: $main-color;
         cursor: pointer;
         transform: scale(1.1);
+    }
+}
+
+/*Area of Media Query*/
+
+@media (max-width: $mobile-bpoint) {
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 64px;
     }
 }

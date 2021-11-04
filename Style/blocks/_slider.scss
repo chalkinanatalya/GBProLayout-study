@@ -41,3 +41,22 @@
 		z-index: 1;
 	}
 }
+
+ /*Area of Media Query*/
+
+ @media (max-width: $mobile-bpoint) {
+
+	.slider {
+		display: flex;
+		justify-content: center;
+	}
+
+	 .slider-img {
+		 width: 374px;
+	 }
+
+	 .slider-btn {
+		position: absolute;
+	 }
+
+ }
