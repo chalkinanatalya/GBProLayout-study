@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d4c3f3532b.js" crossorigin="anonymous"></script>
-    <title>Product</title>
+    <title>Registration</title>
 </head>
 <header>
     <nav class="navbar">
@@ -111,154 +111,75 @@
     </nav>
 </header>
 
+
 <main>
     <section class="jumbotron">
-        <div class="container brand-catalog">
+        <div class="container brand-reg">
             <div>
-                <h1 class="brand-header-arrivals">
-                    NEW ARRIVALS
+                <h1 class="brand-header-reg">
+                    REGISTRATION
                 </h1>
             </div>
-            <div class="brand-breadcrumbs">
-                <ul class="brand-breadcrumbs-ul">
-                    <li class="brand-breadcrumbs-li"><a href="#" class="brand-breadcrumbs-a">HOME</a></li>
-                    <li class="brand-breadcrumbs-li"><a href="#" class="brand-breadcrumbs-a">MEN</a></li>
-                    <li class="brand-breadcrumbs-li"><a href="#" class="brand-breadcrumbs-a-last">NEW ARRIVALS</a></li>
-                </ul>
+        </div>
+    </section>
+
+    <section class="reg-page">
+        <div class="container reg-page-distribution">
+            <div class="reg-page-left">
+                <form action="#" class="reg-page-form">
+                    <h2 class="reg-page-title">Your Name</h2>
+                    <label><input type="text" required name="name" placeholder="First Name"
+                            class="reg-page-row"></label>
+                    <label><input type="text" required name="lastname" placeholder="Last Name"
+                            class="reg-page-row"></label>
+                    <div class="reg-page-radio-group">
+                        <label><input type="radio" name="formale" value="male">
+                            <span class="reg-page-radio">Male</span> </label>
+                        <label><input type="radio" name="forfemale" value="female"><span
+                                class="reg-page-radio">Female</span></label>
+                        <label><input class="reg-page-radio-other" type="radio" name="forother" value="other"><span
+                                class="reg-page-radio-other">Other</span></label>
+                    </div>
+                    <h2 class="reg-page-title">Login Details</h2>
+                    <label><input type="email" required name="email" placeholder="Email" class="reg-page-row"></label>
+                    <label><input type="password" required name="password" placeholder="Password"
+                            class="reg-page-row"></label>
+                </form>
+                <div class="reg-page-description">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                    lowercase
+                    letters
+                </div>
+                <div>
+                    <button class="reg-page-btn">Join Now <svg class="reg-page-svg" width="17" height="10"
+                            viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" />
+                        </svg></button>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section class="slider">
-        <button class="slider-btn slider-btn-left"><i class="fas fa-angle-left"></i></button>
-
-        <div class="slider-box">
-            <img class="slider-img" src="img/model-slider.png" alt="slide">
-        </div>
-
-        <button class="slider-btn slider-btn-right"><i class="fas fa-angle-right"></i></button>
-    </section>
-
-    <section class="card container">
-        <h2 class="card-title">WOMEN COLLECTION</h2>
-        <hr class="card-hr-pink">
-        <h3 class="card-header">MOSCHINO CHEAP AND CHIC</h3>
-        <p class="card-text">Compellingly actualize fully researched processes before proactive outsourcing. <br>
-            Progressively syndicate
-            collaborative architectures before cutting-edge services. Completely visualize parallel core competencies
-            rather than exceptional portals. </p>
-        <p class="card-price">$561</p>
-        <hr class="card-hr-gray">
-
-        <div class="dropdown-qualities">
-            <div>
-                <details class="dropdown-qualities-right">
-                    <summary class="dropdown-qualities-title">CHOOSE COLOR <svg class="dropdown-qualities-svg"
-                            width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
-                                fill="#6F6E6E" />
-                        </svg></summary>
-                    <ul class="dropdown-qualities-drop">
-                        <li class="dropdown-qualities-item"> <button class="dropdown-qualities-btn">BLACK</button>
-                        </li>
-                        <li class="dropdown-qualities-item"> <button class="dropdown-qualities-btn">WHITE</button>
-                        </li>
-                        <li class="dropdown-qualities-item"> <button class="dropdown-qualities-btn">BRIGHT</button>
-                        </li>
+            <div class="reg-page-right">
+                <h2 class="reg-page-header"> LOYALTY HAS ITS PERKS</h2>
+                <div class="reg-page-benifits">
+                    Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                    these as soon as you join:
+                    <ul class="reg-page-benifits-group">
+                        <li class="reg-page-benifit">15% off welcome offer</li>
+                        <li class="reg-page-benifit"> Free shipping, returns and
+                            exchanges on <span class="reg-page-benifit-sp">all orders</span></li>
+                        <li class="reg-page-benifit">$10 off a purchase on your birthday</li>
+                        <li class="reg-page-benifit">Early access to products</li>
+                        <li class="reg-page-benifit">Exclusive offers & rewards</li>
                     </ul>
-                </details>
+                </div>
             </div>
-
-            <div>
-                <details class="dropdown-qualities-right">
-                    <summary class="dropdown-qualities-title">CHOOSE SIZE <svg class="dropdown-qualities-svg" width="11"
-                            height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
-                                fill="#6F6E6E" />
-                        </svg></summary>
-                    <div class="dropdown-qualities-drop">
-                        <label class="dropdown-qualities-oneline"><input type="checkbox" name="size" value="s">S</label>
-                        <label class="dropdown-qualities-oneline"><input type="checkbox" name="size" value="m">M</label>
-                        <label class="dropdown-qualities-oneline"><input type="checkbox" name="size" value="l">L</label>
-                    </div>
-                </details>
-            </div>
-
-            <div>
-                <details class="dropdown-qualities-right">
-                    <summary class="dropdown-qualities-title">QUANTITY<svg class="dropdown-qualities-svg" width="11"
-                            height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
-                                fill="#6F6E6E" />
-                        </svg></summary>
-                    <ul class="dropdown-qualities-drop">
-                        <li class="dropdown-qualities-item"> <button class="dropdown-qualities-btn">Choose
-                                quantity</button>
-                        </li>
-                    </ul>
-                </details>
-            </div>
-
         </div>
-        <div class="card-center">
-            <button class="card-btn">Add to Cart</button>
-        </div>
-    </section>
-
-    <section class="items">
-        <div class="container">
-            <ul class="items-list">
-                <li class="item">
-                    <div class="item-overlay">
-                        <button class="item-btn">Add to Cart</button>
-                    </div>
-                    <div class="item-img">
-                        <img src="img/model-item-4.png" alt="ELLERY X M'O CAPSULE" width="360" height="420">
-                    </div>
-                    <div class="item-group">
-                        <a href="product.html" class="item-title">ELLERY X M'O CAPSULE</a>
-                        <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi</p>
-                        <p class="item-price">$52.00</p>
-                    </div>
-                </li>
-                <li class="item invisible-mobile">
-                    <div class="item-overlay">
-                        <button class="item-btn">Add to Cart</button>
-                    </div>
-                    <div class="item-img">
-                        <img src="img/model-item-3.png" alt="ELLERY X M'O CAPSULE" width="360" height="420">
-                    </div>
-                    <div class="item-group">
-                        <a href="product.html" class="item-title">ELLERY X M'O CAPSULE</a>
-                        <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi</p>
-                        <p class="item-price">$52.00</p>
-                    </div>
-                </li>
-                <li class="item invisible-tablet">
-                    <div class="item-overlay">
-                        <button class="item-btn">Add to Cart</button>
-                    </div>
-                    <div class="item-img">
-                        <img src="img/model-item-6.png" alt="ELLERY X M'O CAPSULE" width="360" height="420">
-                    </div>
-                    <div class="item-group">
-                        <a href="product.html" class="item-title">ELLERY X M'O CAPSULE</a>
-                        <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi</p>
-                        <p class="item-price">$52.00</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
     </section>
     <footer>
-        <section class="registration for-backspace-product">
+        <section class="registration">
             <div class="container">
                 <div class="registration-list">
                     <div class="review">

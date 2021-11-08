@@ -2,6 +2,7 @@
 
 .items-button {
     margin-top: 48px;
+    margin-bottom: 96px;
 
     &-text {
         font-size: 16px;
@@ -38,5 +39,21 @@
 
 
         }
+    }
+}
+
+@media (max-width: $tablet-bpoint) {
+    
+    .items-button {
+    margin-top: 17px;
+    
+    }
+}
+
+@media (max-width: $mobile-bpoint) {
+
+    .items-button {
+    margin-top: 25px;
+    margin-bottom: 96.5px;
     }
 }

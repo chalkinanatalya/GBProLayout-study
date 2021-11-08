@@ -14,331 +14,42 @@
 
 @import "blocks/_header.scss";
 
+/* Dropdown navbar menu*/
+
+
 /* For jumbothron*/
 
 @import "blocks/_jumbothron.scss";
 
 
-/* For Filter*/
+/*All dropdown menu*/
+
+@import "blocks/_dropdown.scss";
 
 
 /* For Slider*/
 
 @import  "blocks/_slider.scss";
 
+/* For cart*/
+
+@import  "blocks/_cart.scss";
+
 /* For Offers*/
 
-.offers {
-    margin-top: 65px;
-}
-
-.offers-list {
-    @include flex-distribution;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    gap: 1rem;
-    row-gap: 1rem;
-}
-
-.offer {
-    position: relative;
-    flex: 1;
-
-    & div {
-        @include second-layer;
-        text-align: center;
-        width: 100%;
-    }
-    
-    & img {
-        object-fit: cover;
-        width: 100%;
-        min-height: 111px;
-        min-width: 232.5px;
-    }
-
-    &-span-us {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    &-span-pink {
-        font-weight: bold;
-        @include header-text;
-        text-align: center;    
-        color: $main-color;
-    }
-}
+@import  "blocks/_offers.scss";
 
 
-.last {
-    flex-basis: 100%;
-}
-
-/*All dropdown menu*/
-
-.dropdown {
-    display: flex;
-    gap: 30px;
-    margin: 10px 0;
-
-    &-filter {
-        width: 360px;
-        position: relative;
-
-        &-title {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 17px;
-            color: #6f6e6e;
-            text-transform: uppercase;
-            display: block;
-            cursor: pointer;
-            padding: 13px 16px;
-        }
-
-        &-drop {
-            position: absolute;
-            background-color: #FFFFFF;
-            z-index: 999;
-            padding: 16px;
-            box-shadow: $shadow;
-            width: 100%;
-            box-sizing: border-box;
-
-        }
-    ::-webkit-details-marker {display: none;}
-
-        &[open] {
-            box-shadow: $shadow;
-        }
-        
-        &[open] .dropdown-filter-title {
-            color: $main-color;
-            background-color: #FFFFFF;
-            position: relative;
-            z-index: 1000;
-            }
-    }
-
-    /*For categories inside filter*/
-
-    &-subfilter {
-        margin-bottom: 18px;
-        
-        &-title {
-            display: block;
-            ::-webkit-details-marker {display: none;}
-            text-transform: uppercase;
-            padding: 11px;
-            border-left: 5px solid $main-color;
-            border-bottom: 1px solid #ebebeb;
-            @include main-text;
-            color: #6f6e6e;
-            cursor: pointer;
-        }
-
-        &[open] .dropdown-subfilter-title {
-            color: $main-color;
-        }
-
-        &:hover .dropdown-subfilter-title {
-            transition: 0.4s;
-            transform: scale(1.1);
-        }
-
-        &-list {
-            list-style: none;
-            padding-left: 15px;
-        }
-
-        &-item {
-            margin-bottom: 11px;
-        }
-
-        &-btn {
-            background-color: #FFFFFF;
-            border: none;
-            @include main-text;
-            color: #6f6e6e;
-            font-family: inherit;
-        }
-    }
-        
-
-    /*Part for sizing etc*/
-    &-sort {
-        display: flex;
-        gap: 20px;
-
-        &-name {
-            text-transform: uppercase;
-        }
-
-        // &-filter {
-        //     width: 360px;
-        //     position: relative;
-    
-        //     &-title {
-        //         font-weight: 600;
-        //         font-size: 14px;
-        //         line-height: 17px;
-        //         color: #000000;
-        //         text-transform: uppercase;
-        //         display: block;
-        //         cursor: pointer;
-        //         padding: 13px 16px;
-        //     }
-    
-        //     &-drop {
-        //         position: absolute;
-        //         background-color: #FFFFFF;
-        //         z-index: 999;
-        //         padding: 16px;
-        //         box-shadow: $shadow;
-    
-        //     }
-        // ::-webkit-details-marker {display: none;}
-            
-        //     &[open] .dropdown-filter-title {
-        //         color: $main-color;
-        //         }
-    
-        // }
-    }
-}
-
-
+/* For page with registration (ALL TWO SIDES)*/
+@import  "blocks/_form.scss";
 
 /* For Cards with description*/
 
 @import  "blocks/_cards.scss";
 
-/* For Items*/
+/* For Items + one shop item is there too*/
 
-.items {
-    padding: 30px 0 95px 0;
-
-    &-heading {
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 36px;
-        color: #222222;
-        margin-bottom: 6px;
-    }
-
-    &-about {
-        font-weight: normal;
-        @include main-text;
-        color: #9F9F9F;
-        margin: 0;
-    }
-
-    &-list {
-        @include flex-distribution;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding-top: 30px;
-        padding-left: 0;
-        list-style: none;
-    }
-
-}
-
-/* For One Shop Item*/
-
-.item {
-    background-color: #f8f8f8;
-    width: 360px;
-    padding-bottom: 10px;
-    transition: 1s;
-    position: relative;
-
-    &:hover .item-overlay {
-        opacity: 1;
-        transform: scaleX(1)
-    }
-
-    &-overlay {
-        background: rgba(58, 56, 56, 0.86);
-        position: absolute;
-        width: 100%;
-        height: 420px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: 1s;
-        transform: scaleX(0);
-        transform-origin: left top;
-    }
-
-    &-btn {
-        padding: 10px 20px;
-        color: #FFFFFF;
-        background-color: transparent;
-        border: 1px solid #FFFFFF;
-        transition: 0.3s;
-        @include main-text;
-        
-            &:hover {
-                transform: scale(1.2);
-            }
-
-            &::before {
-                content: url(../img/cart.svg);
-                vertical-align: middle;
-                padding-right: 11px;
-            }
-    }
-
-    &-group {
-        padding: 0 18px;
-    }
-
-    &-title {
-        display: inline-block;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        color: #000000;
-        padding-left: 18px;
-        text-decoration: none;
-        padding-top: 24px;
-        padding-bottom: 13px;
-    
-        &:hover {
-            transition: 0.4s;
-            transform: scale(1.1);
-        }
-    }
-
-    &-text {
-        font-style: normal;
-        font-weight: 300;
-        @include main-text;
-        color: #5D5D5D;
-        padding: 0 0 18px 17px;
-        margin: 0;
-    }
-    
-    &-price {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        color: $main-color;
-        padding-left: 19px;
-        padding-bottom: 20px;
-        margin: 0;
-    
-    }
-}
+@import  "blocks/_items.scss";
 
 /* For pagination*/
 @import "blocks/_pagination.scss";
@@ -350,3 +61,5 @@
 /* Footer starts here, section of servises below (delivery etc)*/
 
 @import "blocks/_footer.scss";
+
+  

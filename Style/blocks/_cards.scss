@@ -56,6 +56,7 @@
         height: 2px;
         border: 0;
         background-color: #EAEAEA;
+        margin-bottom: 65px;
     }
 
     &-center {
@@ -66,13 +67,14 @@
     /* Button under this card starts there*/
     
     &-btn {
-        padding: 10px 20px;
+        padding: 10px 56px 10px 23px;
         color: $main-color;
         background-color: transparent;
         border: 1px solid $main-color;
         line-height: 44px;
         transition: 0.3s;
         @include main-text;
+        
         
             &:hover {
                 transform: rotateX(360deg);
@@ -96,4 +98,24 @@
             }
     }
 
+}
+
+/*Area of Media Query*/
+
+@media (max-width: $tablet-bpoint) {
+
+        .card {
+            width: 100%;
+        }
+
+        .card-btn {
+            margin-bottom: 64px;
+        }
+}
+
+@media (max-width: $mobile-bpoint) {
+    
+    .card-btn {
+        margin-bottom: 64px;
+    }
 }
